@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gettime{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span id="gettime"></span>
+
+    <script>
+        console.log("this is settimeout");
+
+// function greet(){
+//     console.log('hello mr x');
+// }
+
+// setTimeout(greet, 4000);
+
+function greet(name, batch){
+console.log('hello ' + name + ' of ' + batch);
+}
+
+// if function takes arguments then the arguments can be defined as third fourth and so on parameters.
+// take care not to call function in settimeout that is greet()
+
+// let gettime=setTimeout(greet, 5000, "rabeet", "38c");
+// console.log(gettime);
+// clearTimeout(gettime);
+
+// whenever time is setout it gives an id through which it can be cleared 
+// and if timeout is cleared before executing function then function willnot execute
+
+// let getinterval= setInterval(greet, 2000, 'rabeet', '38c');
+// clearInterval(getinterval);
+
+function displaytime(){
+    time = new Date();
+    // console.log(time);  
+    document.getElementById('gettime').innerHTML=time;
+}
+
+setInterval(displaytime, 1000);
+
+    </script>
+
+</body>
+
+</html>

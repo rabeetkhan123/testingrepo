@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            background-color: aquamarine;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #headi{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="headi">Hello this is h1 heading</h1>
+        <p id="para" onmouseover="mouseover()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            animi tempore veniam quia quo repellat
+            adipisci omnis minima totam optio corrupti, at, porro nihil culpa incidunt. Enim adipisci iusto repellendus
+            error eum animi! Magnam distinctio iste, consequatur quia explicabo nobis molestiae quae! Repudiandae quae
+            rem error enim quibusdam voluptatum, deserunt molestiae eaque quasi modi itaque tempora voluptate sint odit
+            corrupti iure ea? Ut iure minus aliquid maiores.
+        </p>
+    </div>
+
+    <button id="btn" onclick="togglehide()">Hide/unHide</button>
+
+    <script>
+let headi=document.getElementById('headi');
+headi.addEventListener('mouseover', function mouseov(){
+alert('you are on h1 heading')
+});
+
+        // let container = document.getElementsByClassName('container');
+        // let para = document.getElementById('para');
+
+        // function mouseover() {
+        //     alert('mouse is on paragraph');
+        // }
+
+
+        // function togglehide() {
+        //     if (para.style.display != 'none') {
+        //         para.style.display = 'none';
+        //     }
+        //     else {
+        //         para.style.display = 'block';
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html>
